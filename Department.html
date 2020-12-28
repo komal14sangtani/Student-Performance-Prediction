@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CSS Template</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* Style the top navigation bar */
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+        /* Style the topnav links */
+        
+        .topnav a {
+            float: right;
+            display: block;
+            color: #f2f2f2;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        /* Change color on hover */
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .login {
+            position: relative;
+            margin: 30px auto;
+            padding: 20px 20px 20px;
+            width: 310px;
+            background: white;
+            border-radius: 3px;
+            -webkit-box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 200px rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        .login:before {
+            content: '';
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            bottom: -8px;
+            left: -8px;
+            z-index: -1;
+            background: rgba(0, 0, 0, 0.08);
+            border-radius: 4px;
+        }
+        
+        .login h1 {
+            margin: -20px -20px 21px;
+            line-height: 40px;
+            font-size: 15px;
+            font-weight: bold;
+            color: #555;
+            text-align: center;
+            text-shadow: 0 1px white;
+            background: #f3f3f3;
+            border-bottom: 1px solid #cfcfcf;
+            border-radius: 3px 3px 0 0;
+            background-image: -webkit-linear-gradient(top, whiteffd, #eef2f5);
+            background-image: -moz-linear-gradient(top, whiteffd, #eef2f5);
+            background-image: -o-linear-gradient(top, whiteffd, #eef2f5);
+            background-image: linear-gradient(to bottom, whiteffd, #eef2f5);
+            -webkit-box-shadow: 0 1px whitesmoke;
+            box-shadow: 0 1px whitesmoke;
+        }
+        
+        .login p {
+            margin: 20px 0 0;
+        }
+        
+.nav {
+    list-style: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+    float: left; /* Clear floats */
+    width: 100%;
+    /* Bring the nav above everything else--uncomment if needed.
+    position: relative;
+    z-index: 5;
+    */
+}
+.nav li {
+    float: left;
+    margin-right: 10px;
+    position: relative;
+}
+.nav a {
+    display: block;
+    padding: 5px;
+    color: #fff;
+    background-color: #333;
+    text-decoration: none;
+}
+.nav a:hover {
+    color: #fff;
+    background-color: #6b0c36;
+    text-decoration: underline;
+}
+.form-group {
+          display: flex;
+          flex-flow: row wrap;
+          margin: 0 -1rem 1rem -1rem;
+        }
+        
+        [class*="form-col"] {
+          flex: 0 1 100%;
+          padding: 0 1rem;
+        }
+        
+        @media (min-width: 576px) {
+          .form-col-4 {
+            flex: 0 0 33.33333%;
+            max-width: 33.33333%;
+          }
+          
+          .form-col-8 {
+            flex: 0 0 66.66667%;
+            max-width: 66.66667%;
+          }
+          
+          .offset-form-col-4 {
+            margin-left: 33.33333%;
+          }
+          
+        }
+       label{
+ padding: 35px;
+         text-align: right;
+}
+    input {
+          display: block;
+          width: 50%;
+text-align: center;
+        }
+        
+        label {
+          display: flex;
+           font-size: 1.2rem;
+           justify-content: center;
+          width: 500%;
+         height: 100px;
+         margin-left: -50px;
+        margin-top: -20px;
+
+          text-align: center;
+        }
+
+ select {
+          display: flex;
+           font-size: 1.2rem;
+           justify-content: center;
+          width: 500%;
+         height: 50px;
+        background: #CCD1D1;
+         margin-left: 100px;
+        margin-right: -120px;
+       margin-bottom: 50px;
+        margin-top: -20px;
+          text-align: center;
+        }
+
+option {
+         max-width: 400%;
+          text-align:left;
+        }
+      
+        /* Style the footer */
+        
+        {
+            font-family: Open Sans;
+        }
+        
+        section {
+            width: 100%;
+            display: inline-block;
+            background: #333;
+            height: 50vh;
+            text-align: center;
+            font-size: 22px;
+            font-weight: 700;
+            text-decoration: underline;
+        }
+        
+        .footer-distributed {
+            background: #666;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+            box-sizing: border-box;
+            width: 100%;
+            text-align: left;
+            font: bold 16px sans-serif;
+            padding: 55px 50px;
+        }
+        
+        .footer-distributed .footer-left,
+        .footer-distributed .footer-center,
+        .footer-distributed .footer-right {
+            display: inline-block;
+            vertical-align: top;
+        }
+        /* Footer left */
+        
+        .footer-distributed .footer-left {
+            width: 40%;
+        }
+        /* The company logo */
+        
+        .footer-distributed h3 {
+            color: #ffffff;
+            font: normal 36px 'Open Sans', cursive;
+            margin: 0;
+        }
+        
+        .footer-distributed h3 span {
+            color: lightseagreen;
+        }
+        /* Footer links */
+        
+        .footer-distributed .footer-links {
+            color: #ffffff;
+            margin: 20px 0 12px;
+            padding: 0;
+        }
+        
+        .footer-distributed .footer-links a {
+            display: inline-block;
+            line-height: 1.8;
+            font-weight: 400;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        .footer-distributed .footer-company-name {
+            color: #222;
+            font-size: 14px;
+            font-weight: normal;
+            margin: 0;
+        }
+        /* Footer Center */
+        
+        .footer-distributed .footer-center {
+            width: 35%;
+        }
+        
+        .footer-distributed .footer-right i {
+            background-color: #33383b;
+            color: #ffffff;
+            font-size: 25px;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 42px;
+            margin: 10px 15px;
+            vertical-align: middle;
+
+        }
+        
+        .footer-distributed .footer-center i.fa-envelope {
+            font-size: 17px;
+            line-height: 38px;
+        }
+        
+        .footer-distributed .footer-center p {
+            display: inline-block;
+            color: #ffffff;
+            font-weight: 400;
+            vertical-align: middle;
+            margin: 0;
+        }
+        
+        .footer-distributed .footer-center p span {
+            display: block;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 2;
+        }
+        
+        .footer-distributed .footer-center p a {
+            color: lightseagreen;
+            text-decoration: none;
+            ;
+        }
+        
+        .footer-distributed .footer-links a:before {
+            content: "|";
+            font-weight: 300;
+            font-size: 20px;
+            left: 0;
+            color: #fff;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        
+        .footer-distributed .footer-links .link-1:before {
+            content: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+  <a href="/Project/logoutServlet">Logout</a>
+<a href="Contact.html"> Contact Us</a>
+   <a href="AboutUs.html">About</a>
+      
+     
+        <a href="Login.html">Login</a>
+  <a href="index.html">Home Page</a>
+        
+      
+    </div>
+    <div class="login">
+        <h1>DEPARTMENTAL RESULT</h1>
+        <p style="text-align:center"><b>CHOOSE DEPARTMENT</b></p>
+<form action="/Project/departmentServlet"  method="get">
+
+   <div class="form-group">
+   <div class="form-col-4">
+    <div class="form-group">
+      <div class="form-col-4">
+           <label for="Department"></label>
+          </div>
+            <select name="Department" id="Department" >
+              <option value="CS">CS</option>
+              <option value="ME">ME</option>
+              <option value="IT">IT</option>
+              <option value="EC">EC</option>
+               <option value="CE">CE</option>
+            </select>
+          </div>
+        </div>
+         </div>
+        <div class="form-group">
+          <div class="offset-form-col-4 form-col-8">
+            <input type="submit" value="SUBMIT">
+          </div>
+        </div>
+</div>
+    
+    <footer class="footer-distributed">
+        <div class="footer-left">
+            <h3>Student<span>Performance</span></h3>
+            <p class="footer-links">
+
+             
+
+                
+    <a href="index.html">Home Page</a>            
+ <a href="Contact.html">Contact</a>
+<a href="AboutUs.html">About</a>
+<a href="Login.html">Login</a>
+   
+<a href="/Project/logoutServlet">Logout</a>
+                
+            </p>
+        </div>
+        <div class="footer-center">
+<div>
+<i class="fa fa-map-marker"></i>
+<p><span>Hoshila Bharti      Komal Sangtani       Dolly Saluja</span></p>
+</div>
+<div>
+<i class="fa fa-phone"></i>
+<p>+1.555.555.5555</p>
+</div>
+
+<div>
+<i class="fa fa-envelope"></i>
+<p>support@studentPrediction.com</a></p>
+</div>
+</div>
+</footer>
+  </div>
+</body>
+</html>

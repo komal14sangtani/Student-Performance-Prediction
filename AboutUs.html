@@ -1,0 +1,217 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:#ffffff;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
+ padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+
+}
+
+ .About {
+            height: 70px;
+            overflow: hidden;
+            background-color: #212F3C;
+            color: #f2f2f2
+        }
+
+/* Style the content */
+.content {
+  background-color: #ffffff;
+  padding: 10px;
+height: 1000px;
+}
+
+.animation-box {
+  width: 100%;
+  height: 1000px;
+  background-color:#515A5A ;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.animation-container {
+  width: 1000rem;
+  height: 30rem;
+}
+
+@keyframes topFadeOut {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    top: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bottomFadeOut {
+  0% {
+    position: absolute;
+    bottom: -5rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    bottom: 25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+  
+}
+
+@keyframes topFadeOutVertical {
+  0% {
+    position: absolute;
+    top: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    top: 45%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes rightFadeInOut {
+  0% {
+    position: absolute;
+    right: -3rem;
+    opacity: 0;
+  }
+
+  75% {
+    position: absolute;
+    right: 10rem;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    right: 10rem;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  45% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+.first-text {
+  font-size: 4.4rem;
+  position: absolute;
+  left: 2.5rem;
+  top: 5rem;
+  opacity: 0;
+  animation-name: topFadeOut;
+  animation-duration: 50s;
+  color: rgba(241,11 11,0.842);
+ font-size: 30px;
+}
+
+
+.img
+{
+  text-align:center;
+
+}
+
+</style>
+</head>
+<body>
+<div class="topnav">
+ <a href="/Project/logoutServlet">Logout</a>
+  <a href="Contact.html">Contact Us</a>
+ 
+  <a href="Login.html">Login</a>
+  <a  href="index.html">Home Page</a>
+
+
+</div>
+<div class="About">
+        <h1 style="text-align: center;">ABOUT US</h1>
+    </div>
+<div class="content">
+  <section class="animation-box">
+  <div class="first-text">
+
+ Student prediction  system is  most important  approach as  it classifies 
+ large  set  of  student  data  is  very  difficult  so  many organizations 
+suffer from this problem and this would be serious concern. If we are 
+going to classify large set of data set of student on  excel  sheet  it  will  
+take  lot  of  time  and  if we  use  any programming language, it is also 
+very difficult to code for many conditions and classify big data set. 
+                            
+                                    This is the serious issue which frequently occurs 
+during classification of student big data set or predicting  them for  desire 
+ purpose. Student performance prediction system  may provide very easy 
+way to classify large set of student dataset or we can predict large set of 
+
+students as well as individual student also. It provide  a good  platform for 
+ making conditions or rules and we can easily implement it.
+    
+    </div>
+    <div class="img">
+    <img src="student5.jpg" alt="Image"   width="700px" height="250px"> 
+    </div>
+</section>
+ </div>
+ </div>
+</body>
+</html>
